@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert-test</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+        }
+        button:hover{
+            transform: scale(1.1);
+            transition-duration: 150ms;
+        }
+
+    </style>
+</head>
+<body onload="alert('ola')">
+    <section>
+        <input type="text" placeholder="informe um texto" id="texto">
+        <button onclick="minhafuncao()">ativar</button><br>
+        <a href="https://alysonmbs.github.io/test-de-site/"><button id="Inicio">Inicio</button></a>
+        
+    </section>
+    <button onclick="ad()">azul</button>
+    <button onclick="ap()">verde</button>
+    <button onclick="color()">cor do (a)</button>
+<div id=bloco>a</div>
+    <script>
+        const bloco = document.getElementById("bloco");
+        
+        function color(){
+        bloco.style.color = "red";
+        }
+        function ad(){       
+        bloco.style.backgroundColor = "blue";
+        }
+        function ap(){
+        bloco.style.backgroundColor = "green";
+        }
+        
+        function minhafuncao(){
+
+            var texto = document.querySelector('#texto').value;
+            
+           if(texto){        
+            document.querySelector('#texto').value;
+            alert(texto)
+
+           }else{
+             document.querySelector('#texto').value;
+
+            alert("campo vazio!")
+           }
+        }
+            
+        
+    </script>
+</body>
+</html>

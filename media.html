@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Médias</title>
+  <style>
+         button:hover{
+     transition-duration: 150ms;
+     transform: scale(1.1);
+         }
+  </style>
+  <script>
+    function calcularMedia(n1, n2, n3) {
+      return (n1 + n2 + n3) / 3;
+    }
+
+    function executarCalculo() {
+      let nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+      let nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+      let nota3 = parseFloat(prompt("Digite a terceira nota do aluno:"));
+
+      let total = calcularMedia(nota1, nota2, nota3);
+
+      alert("Média do aluno: " + total.toFixed(2));
+    }
+  </script>
+</head>
+<body onload="executarCalculo()">
+  <a href="https://alysonmbs.github.io/test-de-site/"><button style="background-color: black; color: white;">Inicio</button></a>
+  <h1>Cálculo de Médias com JavaScript</h1>
+  <p>As médias serão calculadas automaticamente quando a página carregar.</p>
+</body>
+</html>
